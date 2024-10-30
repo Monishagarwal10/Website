@@ -1,0 +1,260 @@
+/* CSS Reset */
+ *{
+    margin: 0;
+    padding: 0;
+} 
+/* Navigation CSS */
+
+/* CSS Variables */
+/* :root{
+    --navbar-height: 59px;
+} */
+
+/* body{
+    /* font-family: "Baloo Bhai 2", sans-serif; 
+} */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background: ghostwhite;
+    height: 55px;
+}
+#navbar ::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: -0.3; 
+}
+
+#logo{
+    margin: -4px -1px;
+    
+}
+
+#logo img {
+    margin: 11px 8px;
+    height: 56px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+
+#navbar ul li a {
+    color: black;
+   display: block;
+   padding: 12px 28px;
+   text-decoration: none;
+   font-size: 1.4rem; 
+   list-style: none;
+}
+
+#navbar ul li.item a:hover {
+    color: rgba(2, 13, 129, 0.866);
+    /* background-color: rgb(255, 254, 254); */
+}
+
+.item{
+    display: flex;
+}
+
+/* Home CSS */
+#home{
+    padding: 1px 150px;
+    margin: 43px 39px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    height: 300px;  
+}
+#home h2{
+    font-size: 2.0rem;
+}
+
+#home  p{
+    margin: 15px 25px;
+    padding: 17px 25px;
+    justify-content: center;
+    font-size: 1.2rem;
+    
+}
+
+#home ::before{
+    content: "";
+    background: url('Images/bg.avif')  no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 60%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.49;
+}
+
+/* Services section */
+
+#services {
+    display: flex;
+    flex-wrap: wrap; /* Allows the boxes to wrap onto a new line */
+    justify-content: space-between; /* Adds space between boxes */
+    margin: 25px 22px;
+   
+}
+#services .box {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgb(228, 233, 233);
+    margin: 12px 15px;
+    padding: 15px 14px;
+    display: block;
+    width: 33%;
+    box-sizing: border-box;
+    flex: 1 1 30%;
+}
+#services .box img {
+    display: block;
+    width: 100%; /* Image will fit the box width */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 auto; /* Centers the image horizontally */
+    padding: 20px 0; /* Optional padding above and below */
+    max-width: 500px; /* Sets a maximum width for the image */
+}
+
+#service-container #head{
+    font-size: 2.0rem;
+}
+.box p{
+    font-size: 1.0rem;
+    font-family: "Baloo Bhai 2", sans-serif;
+    text-align: justify;
+}
+
+/* Utility classes */
+
+/* .heading2{
+    justify-content: center;
+    padding: 12px 24px;
+    margin: 8px 140px;
+    align-items: center;
+
+} */
+.textcenter{
+    text-align: center;
+    justify-content: center;
+}
+.Contact{
+    padding: 11px 13px;
+    font-weight: bold;
+    align-items: center;
+}
+
+/* About us section */
+.about-container{
+    display: flex;
+}
+.mission{
+    border: 3px solid rgb(1, 5, 20);
+    border-radius: 12px;
+    margin: 18px 22px;
+    padding: 15px 24px;
+    background-color: rgb(195, 221, 235);
+    font-family: "Baloo Bhai 2", sans-serif;
+     font-size: 1.2rem;
+    }
+.process{
+    border: 3px solid rgb(1, 5, 20);
+    border-radius: 12px;
+    margin: 18px 22px;
+    padding: 15px 24px;
+    background-color: rgb(195, 221, 235);
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 1.2rem;
+}
+.abt{
+    padding: 22px 24px;
+    text-align: justify;
+    justify-content: center;
+}
+.mission h2{
+    font-size: 1.7rem;
+}
+.process h2{
+    font-size: 1.7rem;
+}
+#heading{
+    font-size: 2rem;
+    margin: 15px ;
+    color: rgb(0, 50, 64);
+}
+
+/* Contact us  */
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    background: url('Images/con.webp') no-repeat center center/cover;
+    margin: -5px 4px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+#submitbtn{
+    margin: 12px 14px;
+    padding: 14px 14px;
+    float: right;
+    font-size: 1.4rem;
+
+}
+#submitbtn:hover{
+   color: white;
+   background-color: black;
+   cursor:pointer;
+   
+
+}
+
+/* footer */
+#foot{
+    margin: 13px 12px;
+    font-size: 1.2rem;
+}
+
